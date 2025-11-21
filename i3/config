@@ -69,7 +69,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 #####################################################################################################################
 
 # start dmenu
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh logout
 
 
@@ -378,7 +378,7 @@ exec_always --no-startup-id ~/.config/i3/scripts/mouse.sh
 bar {
    	height 35
 	position top
-    	font pango:OperatorMono Nerd Font 12
+    	font pango:Hurmit Nerd Font Mono 12
 	status_command i3status
     	tray_padding 1
     	strip_workspace_numbers yes
