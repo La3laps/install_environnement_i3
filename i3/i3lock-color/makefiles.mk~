@@ -1,0 +1,2 @@
+../../i3lock-color/Makefile : ../../i3lock-color/Makefile.in
+	@ echo 'REMOVED,,,' >$@
