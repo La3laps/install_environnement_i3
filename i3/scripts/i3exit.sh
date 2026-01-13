@@ -1,9 +1,8 @@
 #!/bin/sh
 
-
 case "$1" in
     lock)
-        i3lock -i ~/Pictures/tower-nord.png
+       	exec "$HOME/.config/i3/i3lock-color/lock.sh"
         ;;
     logout)
         i3-msg exit

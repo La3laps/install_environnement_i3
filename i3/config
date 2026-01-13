@@ -70,7 +70,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 
 # start dmenu
 bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
-bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh logout
+bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh lock
 
 
 #####################################################################################################################
@@ -303,7 +303,7 @@ bindsym $mod+i bar mode invisible
 #################                          i3 gaps next                                             #################
 #####################################################################################################################
 
-for_window [class="^.*"] border pixel 8
+for_window [class="^.*"] border pixel 3
 gaps inner 10
 gaps outer 1
 #smart_gaps on
