@@ -9,9 +9,11 @@ sudo cp -rf ./utils-themes/NordArc-Theme/ /usr/share/themes/
 sudo cp -rf ./utils-themes/icons/capitaine-cursors-light/ /usr/share/icons/
 sudo cp -rf ./utils-themes/icons/NordArc-Icons/ /usr/share/icons/
 sudo cp -rf ./rofi/ ~/.config/
+sudo cp -rf ./utils-themes/background.mp4 ~/Videos/
 
 sudo chown -R $USER ~/.config/
 sudo chown -R $USER ~/Pictures/
+sudo chown -R ~/Videos/
 
 #Add fonts to local fonts
 mkdir -p ~/.local/share/fonts

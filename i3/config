@@ -6,6 +6,11 @@
 # Switch monitors
 exec --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal \
                             --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal
+
+# Animated background (need a background.mp4 in Videos)
+exec --no-startup-id xwinwrap -g 3840x2160+0-800 -un -fdt -ni -b -nf -ov -- mpv --hwdec=vdpau --no-audio --no-border --no-config --no-window-dragging --no-input-default-bindings --no-osd-bar --no-sub --loop -wid WID $HOME/Videos/background.mp4
+
+#Autotiling
 exec_always --no-startup-id autotiling
 
 # Mod4 = Windows or Super key on keyboard
@@ -71,6 +76,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 # start dmenu
 bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh lock
+bindsym $mod+Escape exec --no-startup-id ~/.config/i3/scripts/i3exit.sh shutdown
 
 
 #####################################################################################################################
